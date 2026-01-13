@@ -1,0 +1,24 @@
+meta {
+  name: AddPatient
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8082/patient/add
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "idDoctor": 1,
+    "name": "Juan Donoso",
+    "state": "Estable"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

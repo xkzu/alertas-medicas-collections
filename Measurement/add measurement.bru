@@ -1,0 +1,25 @@
+meta {
+  name: add measurement
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8085/measurement/add
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "idPatient": 1,
+    "idSing": 5,
+    "measurementValue": 90.5,
+    "dateTime": "2025-01-13T15:30:00"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

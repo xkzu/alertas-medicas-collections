@@ -1,0 +1,28 @@
+meta {
+  name: add patient
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8084/patient/add
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE3MzY3ODQxMzQsIm5iZiI6MTczNjc4MDUzNCwidmVyIjoiMS4wIiwiaXNzIjoiaHR0cHM6Ly9kdW9jYXp1cmVuYXRpdmUuYjJjbG9naW4uY29tL2E3ZmUyZDU1LTI1NDEtNDY1MS05ZmQxLWFiOTY3YTM0YmVkOS92Mi4wLyIsInN1YiI6IjE2ZWRhNGFmLWExNzMtNGQxMi1iNWFhLTVlOGI2MzA3NmM0MiIsImF1ZCI6IjBmM2U4MzdjLWE1MTUtNDE0My1hMDhjLTliYzc3NmZkYzBhNCIsIm5vbmNlIjoiMDE5NDYwMmYtNDUyOS03NzA5LTg0ZjItNmYwMTg0MGFiOTg4IiwiaWF0IjoxNzM2NzgwNTM0LCJhdXRoX3RpbWUiOjE3MzY3ODA1MzIsImpvYlRpdGxlIjoiRGV2ZWxvcGVyIiwiZ2l2ZW5fbmFtZSI6IsOBbHZhcm8iLCJuYW1lIjoidW5rbm93biIsImVtYWlscyI6WyJhbHZhcm8udmVnYS5wYXZlekBnbWFpbC5jb20iXSwidGZwIjoiQjJDXzFfbG9naW5fbmF0aXZlIn0.Vl0CxcV1hIFQLIYJIuWbM2ZZ9ESRbsmZcrN7qwtAXYR6BPaZmzQQm8SSpufGzNvrjLow3-bpz6d6w-1U07gk0Ktha95MDwk5Zx-0_yTI0rAQXIRSLWHtz3ZWfn2kK5JvKJQgCHVIPxS-RLYAJEFaWaP9Gyd8lVhw5O9KZ9V2RZv8P-ZURJsgbXscaIOPbD3hA_5KgHFROlIXnQNNmvBUxhu1aADx_Tdodi_avgICQYD_FPU0hJTt1PDgmsIiz0yYAM19V8-8JWAHe_Hgb-DxBfwYb3_HJF1Sm0J2aBU-vKD7T9Il9L1io3PiHfdtSqiuYkLWje67-OWOyItRVtwaNA
+}
+
+body:json {
+  {
+    "idDoctor": 1,
+    "name": "Ron Weasley",
+    "state": "Crítico"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

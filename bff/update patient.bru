@@ -1,0 +1,28 @@
+meta {
+  name: update patient
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8084/patient/update
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE3MzY3ODkwNzcsIm5iZiI6MTczNjc4NTQ3NywidmVyIjoiMS4wIiwiaXNzIjoiaHR0cHM6Ly9kdW9jYXp1cmVuYXRpdmUuYjJjbG9naW4uY29tL2E3ZmUyZDU1LTI1NDEtNDY1MS05ZmQxLWFiOTY3YTM0YmVkOS92Mi4wLyIsInN1YiI6IjE2ZWRhNGFmLWExNzMtNGQxMi1iNWFhLTVlOGI2MzA3NmM0MiIsImF1ZCI6IjBmM2U4MzdjLWE1MTUtNDE0My1hMDhjLTliYzc3NmZkYzBhNCIsIm5vbmNlIjoiMDE5NDYwN2EtZTM1NC03Y2I4LWI0NTUtZDk3YjhmY2E5ZTZiIiwiaWF0IjoxNzM2Nzg1NDc3LCJhdXRoX3RpbWUiOjE3MzY3ODU0NzQsImpvYlRpdGxlIjoiRGV2ZWxvcGVyIiwiZ2l2ZW5fbmFtZSI6IsOBbHZhcm8iLCJuYW1lIjoidW5rbm93biIsImVtYWlscyI6WyJhbHZhcm8udmVnYS5wYXZlekBnbWFpbC5jb20iXSwidGZwIjoiQjJDXzFfbG9naW5fbmF0aXZlIn0.gh2qoRPzpbdyc4cQ9_JBTOXmkcmCjban5K_8_dvDGGQut67TL1ggtBSM_t05tXuhOoks6wV-qboseZwl9WONyevdYmiOJjWQmOblSX9lL7JT1T4JSveaSfVvMNo-azSStpEpPYkUUaa5cE2sTPo9u3Z0mpkgltH8htvMfS-CMwEm2eOLRCNfTwH_GwpOTzfXnXz0R9YRQbdQtZ896c5RJkqYGP7WdgqHwUGp9UwmoMveKswcSyui4-V0khDOF9wLLnPl9DjOljeWRzFxhjU_9Z8f8c7oPvOFJiXOlOwcmqEex_EG_qNDMuUsHD5F8y_ap7CIqMX4tJBgbaaP3ZUueQ
+}
+
+body:json {
+  {
+    "id": 2,
+    "idDoctor": 1,
+    "name": "Sarah Connor",
+    "state": "Crítico"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

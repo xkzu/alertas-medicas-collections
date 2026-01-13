@@ -1,0 +1,24 @@
+meta {
+  name: send message
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8086/queue/send/anomaly
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "idPatient": 1,
+    "status": "exampleStatus",
+    "date": "2025-01-26T12:00:00"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

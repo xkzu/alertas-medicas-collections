@@ -1,0 +1,24 @@
+meta {
+  name: UpdatePatient
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8082/patient/update
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id": 2,
+    "idDoctor": 1,
+    "name": "Jhon Wick",
+    "state": "Grave"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

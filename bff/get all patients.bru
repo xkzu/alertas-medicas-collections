@@ -1,0 +1,15 @@
+meta {
+  name: get all patients
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8084/patient/getAll
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

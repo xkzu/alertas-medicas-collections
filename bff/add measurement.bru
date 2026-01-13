@@ -1,0 +1,29 @@
+meta {
+  name: add measurement
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:8084/measurement/add
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE3MzY3OTY4MzcsIm5iZiI6MTczNjc5MzIzNywidmVyIjoiMS4wIiwiaXNzIjoiaHR0cHM6Ly9kdW9jYXp1cmVuYXRpdmUuYjJjbG9naW4uY29tL2E3ZmUyZDU1LTI1NDEtNDY1MS05ZmQxLWFiOTY3YTM0YmVkOS92Mi4wLyIsInN1YiI6IjE2ZWRhNGFmLWExNzMtNGQxMi1iNWFhLTVlOGI2MzA3NmM0MiIsImF1ZCI6IjBmM2U4MzdjLWE1MTUtNDE0My1hMDhjLTliYzc3NmZkYzBhNCIsIm5vbmNlIjoiMDE5NDYwZjEtNTQ1OC03Mzc1LWE5YTAtNGRlYjk2Nzc4OWFkIiwiaWF0IjoxNzM2NzkzMjM3LCJhdXRoX3RpbWUiOjE3MzY3OTMyMzQsImpvYlRpdGxlIjoiRGV2ZWxvcGVyIiwiZ2l2ZW5fbmFtZSI6IsOBbHZhcm8iLCJuYW1lIjoidW5rbm93biIsImVtYWlscyI6WyJhbHZhcm8udmVnYS5wYXZlekBnbWFpbC5jb20iXSwidGZwIjoiQjJDXzFfbG9naW5fbmF0aXZlIn0.Vaoa_L37XT8SnZzDjdnENg5UA06dptb-vRtM2oNlT3v4vWhKTQtLikODdXIuqbSznexvOabZYbk46HXCqhwqLFfOeokhW_sw8CCrrM_cOpzkMUeC0TIXPii7PzjSBC07xCNaPXCAuZq9YgxUTAKXqwC-VMRH8-wp8I_IeTIhNN-qhsSR5-l2nvisShuqR28L_6vakQJaRNb7O7J7Y_U_FWVaFuvV_skjKgunIqUerrtoshuXvewnWlje0ZQU3KqQmtaYugUf0nxU-0lrz2TooXIJcUGv_B2WOldydwD4h37bd0ZGPcr96MEW3VJ4QpBrhQQjhHh7zYb9F7XGT3P60w
+}
+
+body:json {
+  {
+    "idPatient": 1,
+    "idSing": 5,
+    "measurementValue": 90.5,
+    "dateTime": "2025-01-13T15:30:00"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,15 @@
+meta {
+  name: get vital sig by id
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8083/vitalSign/getSign/1
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
