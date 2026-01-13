@@ -1,0 +1,20 @@
+meta {
+  name: add test
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8081/doctor/add
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "James Wilson",
+    "speciality": "Oncologo",
+    "email": "james.wilson@email.com"
+  }
+  
+}
